@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 //Pages imports:
 import 'modules/auth/auth.dart';
 import 'modules/home/home.dart';
+import 'modules/profile/profile.dart';
 import 'modules/splash/splash.dart';
 
 class AppWidget extends StatelessWidget {
@@ -24,6 +25,8 @@ class AppWidget extends StatelessWidget {
         '/verify': (route) => const VerifyPage(),
         '/loading_home_page': (route) => const LoadingHomePage(),
         '/home': (route) => const HomePage(),
+        '/profile': (route) => const ProfilePage(),
+        '/profile_settings': (route) => const ProfileSettingsPage(),
       },
     );
   }

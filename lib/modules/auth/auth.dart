@@ -1,5 +1,5 @@
-export 'auth_page.dart';
-export 'auth_with_riot.dart';
-export 'loading_auth_page.dart';
-export 'loading_home_page.dart';
-export 'verify_auth_page.dart';
+export 'pages/auth_page.dart';
+export 'pages/auth_with_riot.dart';
+export 'pages/loading_auth_page.dart';
+export 'pages/loading_home_page.dart';
+export 'pages/verify_auth_page.dart';
