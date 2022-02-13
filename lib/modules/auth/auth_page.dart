@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:riot_mobile/core/shared/shared.dart';
-import 'package:riot_mobile/modules/auth/auth_with_riot.dart';
 
 class AuthPage extends StatelessWidget {
   const AuthPage({Key? key}) : super(key: key);
@@ -48,7 +47,7 @@ class AuthPage extends StatelessWidget {
                 InkWell(
                   onTap: () {
                     Navigator.of(context).pushNamed(
-                      '/auth_with_riot_account',
+                      '/loading_auth_page',
                     );
                   },
                   child: ClipRRect(
