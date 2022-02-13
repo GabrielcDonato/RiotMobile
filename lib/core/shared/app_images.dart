@@ -1,6 +1,7 @@
 class AppImages {
   //Images:
   static String get riotLogo => 'lib/core/assets/images/riot_logo.png';
+  static String get splash => 'lib/core/assets/images/riot_splash.png';
 
   //Icons:
   static String get riotIcon => 'lib/core/assets/images/riot_icon.jpg';
