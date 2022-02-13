@@ -1,7 +1,10 @@
+//Librarys imports:
 import 'package:flutter/material.dart';
-import 'package:riot_mobile/modules/auth/auth_page.dart';
 
-import 'modules/auth/auth_with_riot.dart';
+//Pages imports:
+import 'modules/auth/auth.dart';
+import 'modules/home/home.dart';
+import 'modules/splash/splash.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({Key? key}) : super(key: key);
@@ -12,10 +15,15 @@ class AppWidget extends StatelessWidget {
     return MaterialApp(
       title: 'Riot Mobile',
       debugShowCheckedModeBanner: false,
-      initialRoute: '/auth',
+      initialRoute: '/splash',
       routes: {
+        '/splash': (route) => const SplashPage(),
+        '/loading_auth_page': (route) => const LoadingAuthPage(),
         '/auth': (route) => const AuthPage(),
         '/auth_with_riot_account': (route) => const AuthRiotAccountPage(),
+        '/verify': (route) => const VerifyPage(),
+        '/loading_home_page': (route) => const LoadingHomePage(),
+        '/home': (route) => const HomePage(),
       },
     );
   }
